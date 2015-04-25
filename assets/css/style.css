@@ -80,7 +80,7 @@ div {
 	top: 100px;
 }
 
-#subtitle{
+.subtitle{
 	display: block;
 	text-align: center;
 	font-size: 32px;
@@ -128,22 +128,27 @@ div {
 	line-height: 30px;
 }
 
-#description-header{
+.description-header{
 	color:rgb(51, 110, 123);
 	text-align: center;
 	font-weight: 700;
 	font-size: 40px;
+	line-height: 60px;
 	letter-spacing: 2px;
 }
 
 /**Blog Page**/
 input[type=range] {
+	display: block;
     -webkit-appearance: none;
     background-color: #666;
 	opacity: 0.5;
     width: 800px;
     height:4px;
-	margin: 48px 124px 8px;
+	margin-top: 48px;
+	margin-bottom: 8px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -190,12 +195,13 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .blog-post{
+	display: block;
 	width: 736px;
 	padding: 32px;
 	margin-top: 48px;
 	margin-bottom: 60px;
-	margin-left: 124px;
-	margin-right: 124px;
+	margin-left: auto;
+	margin-right: auto;
 	background: white;
 	border-radius: 2px;
 	box-shadow: 1px 1px 3px #ccc;
@@ -229,8 +235,9 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .post-content img{
+	display: block;
 	width: 100%;
-	margin: 12px auto;
+	margin: 30px auto;
 	box-shadow: 0.5px 0.5px 2px #ccc;
 }
 
@@ -242,6 +249,24 @@ input[type="range"]::-webkit-slider-thumb {
 	display: block;
 }
 
-a{
-	
+
+/**Map View**/
+#google-map{
+	display: block;
+	margin: 32px auto 60px;
 }
+
+#map-header{
+	text-align: left;
+	margin-top: 24px;
+	margin-bottom: 0px;
+	margin-left: 124px;
+}
+
+#map-subtitle{
+	margin: 12px auto;
+}
+
+/**Album View**/
+
+
