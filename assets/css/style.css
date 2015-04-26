@@ -6,7 +6,6 @@ body{
 }
 
 div {
-	-webkit-transition: linear 0.3s;
 	transition: linear 0.3s;
 }
 
@@ -130,7 +129,6 @@ div {
 }
 
 .description-header{
-	display: block;
 	color:rgb(51, 110, 123);
 	text-align: center;
 	font-weight: 700;
@@ -139,73 +137,10 @@ div {
 	letter-spacing: 2px;
 }
 
-.button{
-	width: 200px;
-	text-align: center;
-	padding: 8px;
-	letter-spacing: 2px;
-	border-radius: 2px;
-	border-color: #eee;
-}
-
-.button:hover{
-	cursor: pointer;
-	opacity: 0.7;
-	transition: linear 0.3s;
-}
-
-#contact-button{
-	display: block;
-	background: rgb(51, 110, 123);
-	margin-left: auto;
-	margin-right: auto;
-	color: white;
-	top: 0px;
-	left: 0px;
-}
-
-#submit-button{
-	position: relative;
-	margin-left: 82px;
-	margin-right: 82px;
-	margin-top: 20px;
-	display: none;
-	color: #eee;
-	background-color: rgb(52, 152, 219);
-}
-
-#cancel-button{
-	position: relative;
-	display: none;
-	margin-left: 82px;
-	margin-right: 82px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background: #eeeeee;
-	color: #6c7a89;
-	border-style: solid;
-	border-color: #abb7b7;
-	border-width: 1px;
-}
-
-
-.contact-form{
-	display: none;
-}
-
-#buttons-container{
-	position: relative;
-	display: none;
-	bottom: 24px;
-	height: 150px;
-	width: 380px;
-}
-
 /**Blog Page**/
 input[type=range] {
 	display: block;
     -webkit-appearance: none;
-    -moz-appearance: none;
     background-color: #666;
 	opacity: 0.5;
     width: 800px;
@@ -226,19 +161,6 @@ input[type="range"]::-webkit-slider-thumb {
 	border-color: white;
 	border-width: 1px;
 }
-
-input[type="range"]::-moz-slider-thumb {
-	-moz-appearance: none;
-	cursor: -moz-grab;
-    background-color: rgb(51, 110, 123);
-    width: 20px;
-    height: 20px;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: white;
-	border-width: 1px;
-}
-
 #post-count{
 	margin-left: 124px;
 	margin-top: 36px;
@@ -303,7 +225,7 @@ input[type="range"]::-moz-slider-thumb {
 	opacity: 0.6;
 	background-color: #d35400;
 	float: right;
-	bottom: 60px;
+	bottom: 52px;
 	text-align: center;
 	color: white;
 }
@@ -346,46 +268,5 @@ input[type="range"]::-moz-slider-thumb {
 }
 
 /**Album View**/
-#sort-by{
-	display: inline-block;
-	font-weight: 600;
-	font-size: 24px;
-	margin-right: 8px;
-}
 
-#photo-sort{
-	font-size: 24px;
-	font-family: inherit;
-	width: 240px;
-	height: 36px;
-	margin-top: 36px;
-	border-radius: 4px;
-	opacity: 0.7;
-}
 
-.cluster-subgroup{
-	display: block;
-	margin: 48px auto;
-}
-
-.cluster-subgroup img{
-	display: inline-block;
-	width: 252px;
-	height: 252px;
-	object-fit: cover;
-	border-radius: 4px;
-}
-
-.photo-member{
-	width: 252px;
-	height: 252px;
-	margin: 0 auto;
-}
-
-#location-cluster{
-	display: none;
-}
-
-#theme-cluster{
-	display: none;
-}
