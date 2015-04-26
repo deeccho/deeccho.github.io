@@ -382,6 +382,12 @@ input[type="range"]::-moz-slider-thumb {
 	margin: 0 auto;
 }
 
+.photo-member:hover{
+	opacity: 0.7;
+	-webkit-transition: ease 0.3s;
+	transition: ease 0.3s;
+}
+
 #location-cluster{
 	display: none;
 }
