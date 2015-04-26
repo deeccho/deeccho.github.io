@@ -6,7 +6,8 @@ $(document).ready(function() {
 	$(".menu-icon").hover(function(){
 		if ($(this).css("border-style") == "solid"){
 			$(this).children("img").css("-webkit-filter", "invert(0%)");
-			$(this).children("img").css("-moz-filter", "invert(0%)");
+			$(this).children("img").css("filter", "invert(0%)");
+			$(this).children("img").css("opacity", "0.7");
 			$(this).css("background-color", "#eeeeee");
 			$(this).css("border-style", "outset");
 			if ($(this).attr('id') == "map"){
@@ -20,31 +21,67 @@ $(document).ready(function() {
 			}
 		} else {
 			$(this).children("img").css("-webkit-filter", "invert(100%)");
+			$(this).children("img").css("filter", "invert(100%)");
+			$(this).children("img").css("opacity", "1");
 			$(this).css("background-color", "");
 			$(this).css("border-style", "solid");
 			$(".label").hide();
 		}
 	});
 	
+	$("#contact-button").click(function(){
+		$(".contact-form").toggle('fold');
+		$(".contact-form").css('display','inline-block');
+		$("#contact-button").fadeOut();
+		$("#buttons-container").fadeIn();
+		$("#buttons-container").css('display', 'inline-block');
+		$('#buttons-container').children().fadeIn();
+	});
+	
+	$("#submit-button").click(function(){
+		$(".contact-form").fadeOut()
+		$(".contact-form").css('display','none');
+		$("#contact-button").fadeIn();
+		$('#buttons-container').children().fadeOut();
+		$("#buttons-container").css('display', 'inline-none');
+		$("#buttons-container").fadeOut();
+	});
+	
+	$("#cancel-button").click(function(){
+		$(".contact-form").fadeOut()
+		$(".contact-form").css('display','none');
+		$("#contact-button").fadeIn();
+		$('#buttons-container').children().fadeOut();
+		$("#buttons-container").css('display', 'inline-none');
+		$("#buttons-container").fadeOut();
+	});
+	
 	$("#page-nav").change(function(){
+		$(document.getElementsByClassName("month-posts")).slideUp();
 		if (document.getElementById("page-nav").value == 7){
-			$(document.getElementsByClassName("month-posts")).slideUp();
 			$("#july-posts").slideDown();
 		} else if (document.getElementById("page-nav").value == 8){
-			$(document.getElementsByClassName("month-posts")).slideUp();
 			$("#august-posts").slideDown();
 		} else if (document.getElementById("page-nav").value == 9){
-			$(document.getElementsByClassName("month-posts")).slideUp();
 			$("#september-posts").slideDown();	
 		} else if (document.getElementById("page-nav").value == 10){
-			$(document.getElementsByClassName("month-posts")).slideUp();
 			$("#october-posts").slideDown();	
 		} else if (document.getElementById("page-nav").value == 11){
-			$(document.getElementsByClassName("month-posts")).slideUp();
 			$("#november-posts").slideDown();	
 		} else if (document.getElementById("page-nav").value == 12){
-			$(document.getElementsByClassName("month-posts")).slideUp();
 			$("#december-posts").slideDown();
 		}
+	});	
+	
+	$("#photo-sort").change(function(){
+		$(document.getElementsByClassName("photo-cluster")).slideUp();
+		if ($("#photo-sort").val() == "date"){
+			$("#date-cluster").slideDown();
+		} else if ($("#photo-sort").val() == "location"){
+			$("#location-cluster").slideDown();
+		} else if ($("#photo-sort").val() == "theme"){
+			$("#theme-cluster").slideDown();
+		}
 	});
+	
 });
