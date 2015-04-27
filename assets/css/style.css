@@ -5,6 +5,14 @@ body{
 	background: #eeeeee;
 }
 
+@media only screen
+	and (min-device-width: 768px)
+	and (max-device-width: 1024px){
+	#container{
+		width: 100%;
+	}	
+	}
+
 div {
 	-webkit-transition: linear 0.3s;
 	-moz-transition: linear 0.3s;
@@ -324,6 +332,16 @@ input[type="range"]::-moz-slider-thumb {
 	display: block;
 }
 
+.read-more{
+	width: 80px;
+	cursor: pointer;
+}
+
+.read-more:hover{
+	opacity: 1;
+	text-decoration: underline;
+	background-color: #eee;
+}
 
 /**Map View**/
 #google-map{

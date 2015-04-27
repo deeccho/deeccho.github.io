@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 	$(function(){
 		$("#about-image img").fadeIn(1000);
 	});
@@ -58,8 +57,9 @@ $(document).ready(function() {
 		}
 	});
 	
-	$(".photo-member").click(function(){
-		
+	$(".read-more").click(function(){
+		$(this).parent().append("Nunc ac scelerisque ligula, a semper quam. Sed vitae massa accumsan, dignissim est porttitor, ornare risus. Sed rutrum nunc nunc. Nulla facilisi. Mauris lobortis fermentum lacus. Donec sit amet accumsan purus, eget luctus ipsum. Curabitur elementum elementum lorem, sit amet molestie leo vulputate et.");
+		$(".read-more").hide();
 	});
 	
 });
