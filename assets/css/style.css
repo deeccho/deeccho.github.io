@@ -8,6 +8,7 @@ body{
 div {
 	-webkit-transition: linear 0.3s;
 	-moz-transition: linear 0.3s;
+	-ms-transition: linear 0.3s;
 }
 
 #header{
@@ -56,6 +57,11 @@ div {
 	filter: invert(100%);
 }
 
+.menu-icon:hover{
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+
 #map{
 	margin-right: 20px;
 }
@@ -74,11 +80,14 @@ div {
 }
 
 .container{
-	position: relative;
+	position: absolute;
 	width: 1048px;
-	margin: 0 auto;
 	overflow: auto;
-	top: 100px;
+	margin-top: 100px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .subtitle{
@@ -154,6 +163,7 @@ div {
 	opacity: 0.7;
 	-webkit-transition: linear 0.3s;
 	-moz-transition: linear 0.3s;
+	transition: linear 0.3s;
 }
 
 #subcontainer{
@@ -190,6 +200,7 @@ input[type=range] {
 	display: block;
     -webkit-appearance: none;
     -moz-appearance: none;
+    -ms-appearance: none;
     background-color: #666;
 	opacity: 0.5;
     width: 800px;
@@ -202,6 +213,8 @@ input[type=range] {
 
 input[type="range"]::-webkit-slider-thumb {
      -webkit-appearance: none;
+     -moz-appearance: none;
+     -ms-appearance: none;
     background-color: rgb(51, 110, 123);
     width: 20px;
     height: 20px;
@@ -369,6 +382,7 @@ input[type="range"]::-moz-slider-thumb {
 .photo-member:hover{
 	opacity: 0.7;
 	-webkit-transition: 0.3s;
+	transition: 0.3s;
 }
 
 #location-cluster{

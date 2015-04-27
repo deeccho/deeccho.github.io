@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	$(function(){
 		$("#about-image img").fadeIn(1000);
 	});
@@ -55,6 +56,10 @@ $(document).ready(function() {
 		} else if ($("#photo-sort").val() == "theme"){
 			$("#theme-cluster").slideDown();
 		}
+	});
+	
+	$(".photo-member").click(function(){
+		
 	});
 	
 });
