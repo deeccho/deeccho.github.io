@@ -29,10 +29,6 @@ $(document).ready(function() {
 		}
 	});
 	
-	$("#contact-button").click(function(){
-
-	});
-	
 	$("#page-nav").change(function(){
 		$(document.getElementsByClassName("month-posts")).slideUp();
 		if (document.getElementById("page-nav").value == 7){

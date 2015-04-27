@@ -7,7 +7,7 @@ body{
 
 div {
 	-webkit-transition: linear 0.3s;
-	transition: linear 0.3s;
+	-moz-transition: linear 0.3s;
 }
 
 #header{
@@ -111,7 +111,8 @@ div {
 
 #about-image img:hover{
 	opacity: 0.7;
-	transition: linear 0.3s;
+	-webkit-transition: linear 0.3s;
+	-moz-transition: linear 0.3s;
 }
 
 #about-description{
@@ -151,7 +152,8 @@ div {
 .button:hover{
 	cursor: pointer;
 	opacity: 0.7;
-	transition: linear 0.3s;
+	-webkit-transition: linear 0.3s;
+	-moz-transition: linear 0.3s;
 }
 
 #subcontainer{
@@ -366,8 +368,7 @@ input[type="range"]::-moz-slider-thumb {
 
 .photo-member:hover{
 	opacity: 0.7;
-	-webkit-transition: ease 0.3s;
-	transition: ease 0.3s;
+	-webkit-transition: 0.3s;
 }
 
 #location-cluster{
