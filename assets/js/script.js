@@ -30,30 +30,7 @@ $(document).ready(function() {
 	});
 	
 	$("#contact-button").click(function(){
-		$(".contact-form").toggle('fold');
-		$(".contact-form").css('display','inline-block');
-		$("#contact-button").fadeOut();
-		$("#buttons-container").fadeIn();
-		$("#buttons-container").css('display', 'inline-block');
-		$('#buttons-container').children().fadeIn();
-	});
-	
-	$("#submit-button").click(function(){
-		$(".contact-form").fadeOut()
-		$(".contact-form").css('display','none');
-		$("#contact-button").fadeIn();
-		$('#buttons-container').children().fadeOut();
-		$("#buttons-container").css('display', 'inline-none');
-		$("#buttons-container").fadeOut();
-	});
-	
-	$("#cancel-button").click(function(){
-		$(".contact-form").fadeOut()
-		$(".contact-form").css('display','none');
-		$("#contact-button").fadeIn();
-		$('#buttons-container').children().fadeOut();
-		$("#buttons-container").css('display', 'inline-none');
-		$("#buttons-container").fadeOut();
+
 	});
 	
 	$("#page-nav").change(function(){
